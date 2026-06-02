@@ -28,4 +28,14 @@ export const en = {
       },
     },
   },
+  projectDetail: {
+    newsExplorer: {
+      title: "News Explorer App",
+      text: "Full-stack project developed as the final project of the TripleTen Web Development bootcamp. Built with React and Node.js, it integrates a news search API that displays results through a dynamic card-based interface. It also includes a save system using a MongoDB database, allowing users to manage and customize their list of news of interest after user authentication.",
+    },
+    aroundTheWorld: {
+      title: "Around the World",
+      text: "Full-stack project developed during my web development training. The application allows users to register, log in, and manage their profile, as well as dynamically create, view, and delete cards to share content with other users.",
+    },
+  },
 };

@@ -6,10 +6,11 @@ import { LanguageContext } from "../context/LanguageContext";
 
 type Props = {
   handleLanguage: () => void;
+  language: string;
 };
 
-function Header({ handleLanguage }: Props) {
-  const { language, texts } = useContext(LanguageContext);
+function Header({ handleLanguage, language }: Props) {
+  const { texts } = useContext(LanguageContext);
 
   return (
     <header className={styles.header}>

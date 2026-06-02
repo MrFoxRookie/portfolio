@@ -25,7 +25,7 @@ function App() {
         texts,
       }}
     >
-      <Header handleLanguage={handleLanguage} />
+      <Header handleLanguage={handleLanguage} language={language} />
       <Main />
       <Footer />
     </LanguageContext.Provider>
