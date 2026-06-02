@@ -1,26 +1,25 @@
-.header__container {
+.headerContainer {
   display: flex;
-  border: 1px solid red;
+
   justify-content: space-between;
   align-items: center;
 }
 
-.header__image {
+.headerImage {
   width: 40px;
   height: 40px;
 }
 
-.header__nav {
-  border: 1px solid red;
+.headerNav {
 }
 
-.header__list {
+.headerList {
   display: flex;
   list-style-type: none;
   gap: 10px;
 }
 
-.header__link {
+.headerLink {
   text-decoration: none;
   color: inherit;
 }

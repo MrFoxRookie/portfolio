@@ -1,0 +1,49 @@
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectContainer {
+  min-width: 500px;
+  min-height: 500px;
+  border: 1px solid red;
+}
+
+.projectImageContainer {
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.projectImageContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectImageLink {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.projectImageContainer:hover::after {
+  opacity: 1;
+}
+
+.projectImageContainer:hover .projectImageLink {
+  opacity: 1;
+}
