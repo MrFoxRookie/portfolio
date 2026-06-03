@@ -23,6 +23,7 @@ function App() {
     <LanguageContext.Provider
       value={{
         texts,
+        language,
       }}
     >
       <Header handleLanguage={handleLanguage} language={language} />

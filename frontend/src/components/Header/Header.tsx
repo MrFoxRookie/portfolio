@@ -9,8 +9,8 @@ type Props = {
   language: string;
 };
 
-function Header({ handleLanguage, language }: Props) {
-  const { texts } = useContext(LanguageContext);
+function Header({ handleLanguage }: Props) {
+  const { texts, language } = useContext(LanguageContext);
 
   return (
     <header className={styles.header}>
