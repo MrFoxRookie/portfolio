@@ -1,13 +1,12 @@
 .headerContainer {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
 }
 
 .headerImage {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
 }
 
 .headerNav {
@@ -16,10 +15,16 @@
 .headerList {
   display: flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 40px;
+  font-size: 40px;
 }
 
 .headerLink {
   text-decoration: none;
   color: inherit;
+}
+
+.languageButton {
+  width: 80px;
+  height: 80px;
 }

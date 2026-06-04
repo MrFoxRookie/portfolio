@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import image from "../../../public/favicon.svg";
+import image from "../../../public/logo.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";

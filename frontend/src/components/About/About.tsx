@@ -12,17 +12,25 @@ function About() {
     language === "es" ? "/curriculum-es.pdf" : "/curriculum-en.pdf";
 
   return (
-    <>
-      <h1>{texts.about.title}</h1>
-      <p>{texts.about.firstParagraph}</p>
-      <p>{texts.about.secondParagraph}</p>
-
-      <img src={personalImage} alt="" />
-
+    <div className={styles.about}>
+      <h1 className={styles.aboutTitle}>{texts.about.title}</h1>
+      <div className={styles.aboutMainContainer}>
+        <div className={styles.aboutTextContainer}>
+          <p className={styles.aboutText}>{texts.about.firstParagraph}</p>
+          <p>{texts.about.secondParagraph}</p>
+        </div>
+        <div className={styles.aboutPhotoContainer}>
+          <img
+            src={personalImage}
+            alt="Imagen del autor"
+            className={styles.aboutPhoto}
+          />
+        </div>
+      </div>
       <a href={curriculum} download>
         <img src={curriculumIcon} alt="Icono de documento" />
       </a>
-    </>
+    </div>
   );
 }
 

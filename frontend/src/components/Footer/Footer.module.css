@@ -1,0 +1,19 @@
+.footer {
+  color: black;
+  text-align: center;
+}
+
+.footerLogosContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerIcon {
+  width: 50px;
+}
+
+.footerCopyright {
+  margin: 20px 0 0;
+  padding-bottom: 20px;
+}

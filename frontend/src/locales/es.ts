@@ -12,7 +12,7 @@ export const es = {
   },
   about: {
     title: "Acerca de mí",
-    firsParagraph: `De la mano de mi Tech Stack, enfocado tanto en el frontend como en el
+    firstParagraph: `De la mano de mi Tech Stack, enfocado tanto en el frontend como en el
         backend, soy una persona a la que le gustan los retos, ya que no solo me
         ponen a prueba, sino que también me impulsan a innovar y crear código
         que no solo ofrezca soluciones eficientes, sino que también brinde a los
@@ -44,11 +44,31 @@ export const es = {
           "MySQL",
           "REST API",
           "Diseño Responsivo",
+          "MVC",
         ],
       },
       aroundTheWorld: {
         text: `Plataforma interactiva tipo red social. Around the World es un espacio intuitivo que permite a los usuarios compartir y descubrir algunos de los lugares más emblemáticos y fascinantes alrededor del mundo.`,
-        keywords: ["HTML", "CSS", "React", "Node.js", "Express"],
+        keywords: [
+          "HTML",
+          "CSS",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "BEM",
+        ],
+      },
+      tripleEspresso: {
+        text: `Página estática para un negocio de café. Triple Espresso es un espacio hogareño que utilicé como práctica para aplicar conocimientos de posicionamiento y armonización de colores, otorgando a la página un diseño vibrante y agradable a la vista del usuario.`,
+        keywords: [
+          "HTML",
+          "CSS",
+          "Diseño Responsivo",
+          "Flexbox",
+          "CSS Grid",
+          "Figma",
+        ],
       },
     },
   },
