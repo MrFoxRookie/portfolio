@@ -1,5 +1,7 @@
 import styles from "./Header.module.css";
 import image from "../../../public/logo.svg";
+import mexicanFlag from "../../assets/Images/icons/mexican-flag.svg";
+import usFlag from "../../assets/Images/icons/us-flag.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
@@ -48,7 +50,15 @@ function Header({ handleLanguage }: Props) {
         </nav>
 
         <button className={styles.languageButton} onClick={handleLanguage}>
-          {language === "es" ? "en" : "es"}
+          <img
+            className={styles.languageImage}
+            src={language === "es" ? usFlag : mexicanFlag}
+            alt={
+              language === "es"
+                ? "Flag of the United States"
+                : "Bandera de México"
+            }
+          />
         </button>
       </div>
     </header>

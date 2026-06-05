@@ -23,38 +23,6 @@
   display: block;
 }
 
-.projectImageContainer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.projectImageContainer:hover::after {
-  opacity: 1;
-}
-
-.projectImageLink {
-  position: absolute;
-
-  transform: translate(-50%, -50%);
-  bottom: -20px;
-  left: 120px;
-  opacity: 0;
-  z-index: 2;
-
-  color: white;
-  font-size: 30px;
-  transition: opacity 0.3s ease;
-}
-
-.projectImageContainer:hover .projectImageLink {
-  opacity: 1;
-}
-
 .projectTitle {
   font-size: 30px;
   text-align: center;

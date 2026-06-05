@@ -6,7 +6,7 @@ export const en = {
     navbar: {
       home: "Home",
       about: "About",
-      contact: "Contac",
+      contact: "Contact",
       projects: "Projects",
     },
   },
@@ -68,12 +68,19 @@ export const en = {
     newsExplorer: {
       image: newsExplorerImage,
       title: "News Explorer App",
-      text: "Full-stack project developed as the final project of the TripleTen Web Development bootcamp. Built with React and Node.js, it integrates a news search API that displays results through a dynamic card-based interface. It also includes a save system using a MongoDB database, allowing users to manage and customize their list of news of interest after user authentication.",
+      firstParagraph: `Full-stack project developed with React and Node.js. News Explorer App integrates various modern technologies to provide a news search and management platform, allowing users to explore information from international sources in an unbiased way through an external API.`,
+      secondParagraph: `The application incorporates an authentication and data storage system that allows users to create accounts, save articles of interest, and later access their personalized content. Additionally, it uses a MySQL database to manage user information and stored articles.`,
+      githubLink: "https://github.com/MrFoxRookie/News-Explorer-App",
+      liveLink: "https://news-explorer-app-three.vercel.app/",
     },
     aroundTheWorld: {
       image: aroundTheWorldImage,
       title: "Around the World",
       text: "Full-stack project developed during my web development training. The application allows users to register, log in, and manage their profile, as well as dynamically create, view, and delete cards to share content with other users.",
+      firstParagraph:
+        "Around the World is a full-stack project built with HTML, CSS, and JavaScript for the frontend, and Node.js, Express, and MongoDB for the backend. The application includes JWT-based authentication and user registration, allowing users to manage their profiles and dynamically create, delete, and interact with cards, creating a platform for sharing content with other users.",
+      secondParagraph:
+        "The project features secure authentication using JWT, profile management functionalities, dynamic card creation and deletion, and full backend integration with Node.js, Express, and MongoDB. The application is designed to support user interaction through shared content while maintaining a scalable and organized architecture.",
     },
   },
   footer: {

@@ -20,11 +20,32 @@
 }
 
 .headerLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  outline: 0;
+  transition: all 0.2s ease;
   text-decoration: none;
-  color: inherit;
+  color: black;
+}
+
+.headerLink:hover {
+  background-color: black;
+  color: white;
 }
 
 .languageButton {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.languageImage {
+  width: 50px;
+  height: 50px;
 }

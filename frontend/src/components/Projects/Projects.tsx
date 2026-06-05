@@ -1,13 +1,13 @@
 import styles from "../Projects/Projects.module.css";
 import newsExplorer from "../../assets/Images/projects/news-explorer.jpeg";
 import arountTheWorld from "../../assets/Images/projects/around-the-world.jpeg";
-import tripleEspresso from "../../assets/Images/projects/triple-espresso.jpeg";
+import tripleEspresso from "../../assets/Images/projects/triple-espresso.png";
 import { LanguageContext } from "../context/LanguageContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  const { texts } = useContext(LanguageContext);
+  const { texts, language } = useContext(LanguageContext);
 
   return (
     <div className={styles.projects}>
@@ -16,7 +16,11 @@ function Projects() {
           <Link to="/projects/news-explorer">
             <div className={styles.projectImageContainer}>
               <img src={newsExplorer} alt="" className={styles.projectImage} />
-              <p className={styles.projectImageLink}>Click para mas...</p>
+              <p className={styles.projectImageLink}>
+                {language === "es"
+                  ? "Click para mas..."
+                  : "For more details..."}{" "}
+              </p>
             </div>
           </Link>
           <h3 className={styles.projectTitle}>News Explorer App</h3>
@@ -39,7 +43,11 @@ function Projects() {
                 alt=""
                 className={styles.projectImage}
               />
-              <p className={styles.projectImageLink}>Conocer mas...</p>
+              <p className={styles.projectImageLink}>
+                {language === "es"
+                  ? "Click para mas..."
+                  : "For more details..."}{" "}
+              </p>
             </div>
           </Link>
 
@@ -56,14 +64,18 @@ function Projects() {
           </div>
         </div>
         <div className={styles.projectContainer}>
-          <Link to="/projects/news-explorer">
+          <Link to="/projects/triple-espresso">
             <div className={styles.projectImageContainer}>
               <img
                 src={tripleEspresso}
                 alt=""
                 className={styles.projectImage}
               />
-              <p className={styles.projectImageLink}>Conocer mas...</p>
+              <p className={styles.projectImageLink}>
+                {language === "es"
+                  ? "Click para mas..."
+                  : "For more details..."}{" "}
+              </p>
             </div>
           </Link>
           <h3 className={styles.projectTitle}>Triple Espresso</h3>

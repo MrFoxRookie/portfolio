@@ -14,14 +14,14 @@ function Contact() {
     <>
       <h1>{texts.contact.title}</h1>
       <p>{texts.contact.text}</p>
-      <div className={styles.contact__icons}>
+      <div className={styles.contactIcons}>
         <a
           href="https://github.com/MrFoxRookie"
           target="_blank"
           rel="noreferrer"
           aria-label="GitHub"
         >
-          <img src={githubIcon} alt="GitHub" />
+          <img src={githubIcon} alt="GitHub" className={styles.contactIcon} />
         </a>
         <a
           href="https://www.linkedin.com/in/zahid-tejeda-amaro/"
@@ -29,16 +29,24 @@ function Contact() {
           rel="noreferrer"
           aria-label="LinkedIn"
         >
-          <img src={linkedinIcon} alt="LinkedIn" />
+          <img
+            src={linkedinIcon}
+            alt="LinkedIn"
+            className={styles.contactIcon}
+          />
         </a>
         <a
           href="mailto:zahidtejedaamaro.dev@gmail.com"
           aria-label="Correo electrónico"
         >
-          <img src={emailIcon} alt="Correo electrónico" />
+          <img
+            src={emailIcon}
+            alt="Correo electrónico"
+            className={styles.contactIcon}
+          />
         </a>
         <a href="tel:+529994994048" aria-label="Número telefónico">
-          <img src={phoneIcon} alt="Teléfono" />
+          <img src={phoneIcon} alt="Teléfono" className={styles.contactIcon} />
         </a>
       </div>
     </>

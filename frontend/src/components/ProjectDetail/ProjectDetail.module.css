@@ -1,0 +1,113 @@
+.projectDetail {
+}
+
+.projectDetailContainer {
+  max-width: 2000px;
+  gap: 20px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.projectReturn {
+}
+
+.projectImage {
+  border-radius: 20px;
+  width: 600px;
+  width: 50%;
+}
+
+.projectInformationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 50%;
+  gap: 10px;
+}
+
+.projectTitle {
+  font-size: 44px;
+  text-align: center;
+  margin: 0;
+}
+
+.projectText {
+  font-size: 28px;
+  margin: 0;
+}
+
+.projectIconsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectLink {
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+}
+
+.projectIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 300px;
+  height: 80px;
+
+  background-color: black;
+
+  border-radius: 20px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  transform-origin: center;
+
+  cursor: pointer;
+}
+
+.projectIconContainer:hover {
+  animation: breathe 1.8s ease-in-out infinite;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectIconContainer:active {
+  transform: scale(0.98);
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.projectIconContainer:active {
+  transform: scale(0.98);
+}
+
+.projectIcon {
+  width: 40px;
+}
+
+.projectIconText {
+  font-size: 22px;
+
+  color: white;
+}
