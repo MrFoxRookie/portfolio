@@ -5,7 +5,6 @@ import liveIcon from "../../assets/Images/icons/live.svg";
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
-import { Link } from "react-router-dom";
 
 const projectSlugMap: any = {
   "news-explorer": "newsExplorer",
